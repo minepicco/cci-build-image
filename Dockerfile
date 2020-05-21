@@ -5,4 +5,4 @@ RUN python get-pip.py
 RUN pip install awscli
 RUN wget -qO- https://get.docker.com/ | sh
 RUN curl -fL https://getcli.jfrog.io | sh
-RUN mkdir /etc/docker && echo '{ "insecure-registries" : ["artifactory.nohara","34.66.44.144"] }' >> /etc/docker/daemon.json
+RUN mkdir /etc/docker && echo '{ "insecure-registries" : ["artifactory.nohara","*.macnica.net"] }' >> /etc/docker/daemon.json
