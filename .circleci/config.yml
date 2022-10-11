@@ -1,8 +1,8 @@
-version: 2
+version: 2.1
 jobs:
-  build: machine
-   # docker:
-   #   - image: minepicco/cc-build-image:latest
+  build: 
+    docker:
+      - image: minepicco/cc-build-image:latest
         #minepicco/cci-aws-docker:latest
         #aws_auth:
         #  aws_access_key_id: $AWS_ACCESS_KEY_ID
