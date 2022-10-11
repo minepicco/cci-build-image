@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/build-image:latest
+      - image: circleci/runner:latest
         #minepicco/cci-aws-docker:latest
         #aws_auth:
         #  aws_access_key_id: $AWS_ACCESS_KEY_ID
