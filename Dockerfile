@@ -1,4 +1,4 @@
-From ubuntu:18.04
+From ubuntu:ltest
 RUN apt-get update && apt install -y python wget curl jq
 ## Install aws cli
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
