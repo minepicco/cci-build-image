@@ -1,5 +1,5 @@
 From ubuntu:latest
-RUN apt-get update && apt install -y python wget curl jq
+RUN apt-get update && apt install -y python wget curl jq git
 ## Install aws cli
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 RUN python get-pip.py
