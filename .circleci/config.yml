@@ -33,3 +33,4 @@ jobs:
           command: |
             docker push $iname":"$CIRCLE_BUILD_NUM
             docker push $iname":latest"
+
