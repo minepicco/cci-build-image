@@ -21,6 +21,6 @@ RUN echo 'oc="kubectl"' >> ~/.bashrc && echo 'rh="gcloud"' >> ~/.bashrc
 RUN git clone https://github.com/anyenv/anyenv ~/.anyenv
 RUN echo 'export PATH=”$HOME/.anyenv/bin:$PATH”' >> ~/.zshrc
 RUN echo 'eval “$(anyenv init -)”' >> ~/.zshrc
-RUN ~/.anyenv/bin/anyenv init
+RUN anyenv init
 RUN anyenv intall nodenv
 
