@@ -1,8 +1,8 @@
 From ubuntu:latest
-RUN apt-get update && apt install -y python wget curl jq git
+RUN apt-get update && apt install -y python3 wget curl jq git
 ## Install aws cli
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-RUN python get-pip.py
+RUN python3 get-pip.py
 RUN pip install awscli
 ## Install latest docker
 RUN wget -qO- https://get.docker.com/ | sh
