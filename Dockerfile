@@ -17,3 +17,10 @@ RUN apt-get update && apt-get install -y google-cloud-sdk
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
 RUN echo 'oc="kubectl"' >> ~/.bashrc && echo 'rh="gcloud"' >> ~/.bashrc
+## Install anyenv
+RUN git clone https://github.com/anyenv/anyenv ~/.anyenv
+RUN echo 'export PATH=”$HOME/.anyenv/bin:$PATH”' >> ~/.zshrc
+RUN echo 'eval “$(anyenv init -)”' >> ~/.zshrc
+RUN ~/.anyenv/bin/anyenv init
+RUN anyenv intall nodenv
+
